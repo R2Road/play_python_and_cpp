@@ -4,20 +4,21 @@
 #include <iostream>
 
 //
-// Lua
+// Python
 //
-//extern "C"
-//{
-//#include "lua.h"
-//#include "lauxlib.h"
-//#include "lualib.h"
-//}
-//
-//#if defined( _WIN64 )
-//	#pragma comment( lib, "lua/x64/liblua54.a" )
-//#else
-//	#pragma comment( lib, "lua/x86/liblua54.a" )
-//#endif
+
+// Link First
+#if defined( _WIN64 )
+	#ifdef _DEBUG
+		#pragma comment( lib, "python64/libs/python310_d.lib" )
+	#elif
+		#pragma comment( lib, "python64/libs/python310.lib" )
+	#endif
+#else
+	#pragma comment( lib, "" )
+#endif
+
+#include "Python.h"
 
 //
 //
