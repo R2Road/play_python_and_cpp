@@ -20,7 +20,7 @@ namespace r2
 		) );
 
 		{
-			ret->AddChild( '1', lua_state_test::Basic::GetInstance() );
+			ret->AddChild( '1', python_basic_test::Initialize_And_Finalize::GetInstance() );
 
 
 			ret->AddLineFeed();

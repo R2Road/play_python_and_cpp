@@ -3,16 +3,16 @@
 
 #include "base/r2_eTestResult.h"
 
-namespace lua_state_test
+namespace python_basic_test
 {
-	r2::iTest::TitleFunc Basic::GetTitleFunction() const
+	r2::iTest::TitleFunc Initialize_And_Finalize::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
-			return "Lua State";
+			return "Python Initialize/Finalize";
 		};
 	}
-	r2::iTest::DoFunc Basic::GetDoFunction()
+	r2::iTest::DoFunc Initialize_And_Finalize::GetDoFunction()
 	{
 		return []()->r2::eTestResult
 		{
@@ -20,34 +20,27 @@ namespace lua_state_test
 
 			std::cout << r2::split;
 
-			//lua_State* lua_state_obj = nullptr;
+			{
+				//
+				// Python Initialize
+				//
+				Py_Initialize();
 
-			//std::cout << r2::tab << "+ Variable" << r2::linefeed2;
-			//std::cout << r2::tab2 << "lua_State* lua_state_obj = nullptr;" << r2::linefeed;
+				std::cout << r2::tab << "+ Python Initialize" << r2::linefeed2;
+				std::cout << r2::tab2 << "Py_Initialize();" << r2::linefeed;
+			}
 
-			//std::cout << r2::split;
+			std::cout << r2::split;
 
-			//{
-			//	//
-			//	// Make Lua State
-			//	//
-			//	lua_state_obj = luaL_newstate();
+			{
+				//
+				// Python Finalize
+				//
+				Py_Finalize();
 
-			//	std::cout << r2::tab << "+ Make lua_State" << r2::linefeed2;
-			//	std::cout << r2::tab2 << "lua_state_obj = luaL_newstate();" << r2::linefeed;
-			//}
-
-			//std::cout << r2::split;
-
-			//{
-			//	//
-			//	// Close Lua State
-			//	//
-			//	lua_close( lua_state_obj );
-
-			//	std::cout << r2::tab << " + Close lua_State" << r2::linefeed2;
-			//	std::cout << r2::tab2 << "lua_close( lua_state_obj );" << r2::linefeed;
-			//}
+				std::cout << r2::tab << "+ Python Finalize" << r2::linefeed2;
+				std::cout << r2::tab2 << "Py_Finalize();" << r2::linefeed;
+			}
 
 			std::cout << r2::split;
 
