@@ -9,7 +9,7 @@ namespace python_basic_test
 	{
 		return []()->const char*
 		{
-			return "Python Initialize/Finalize";
+			return "Python Initialize And Finalize";
 		};
 	}
 	r2::iTest::DoFunc Initialize_And_Finalize::GetDoFunction()
