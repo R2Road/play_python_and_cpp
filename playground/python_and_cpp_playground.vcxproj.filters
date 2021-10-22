@@ -3,8 +3,61 @@
   <ItemGroup>
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\pch.cpp" />
+    <ClCompile Include="src\base\r2_Director.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\r2_FrameManager.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\r2_Menu.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\menu\r2_RootMenu.cpp">
+      <Filter>menu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test\python_basic_test.cpp">
+      <Filter>test</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\pch.h" />
+    <ClInclude Include="src\base\r2_Assert.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\r2_Director.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\r2_eTestResult.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\r2_FrameManager.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\r2_iTest.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\r2_Menu.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\r2_Singleton.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\menu\r2_RootMenu.h">
+      <Filter>menu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\test\python_basic_test.h">
+      <Filter>test</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="base">
+      <UniqueIdentifier>{10b11794-0701-453a-aff4-abad2c3f4448}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="menu">
+      <UniqueIdentifier>{07c0d87f-3eb0-48dc-a730-1f5584d1ffc5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test">
+      <UniqueIdentifier>{aeee364c-08e0-4950-93ae-30b8fdf18d02}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
 </Project>
