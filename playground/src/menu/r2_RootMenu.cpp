@@ -21,7 +21,8 @@ namespace r2
 
 		{
 			ret->AddChild( '1', python_basic_test::Initialize_And_Finalize::GetInstance() );
-			ret->AddChild( '2', python_basic_test::SimpleString::GetInstance() );
+			ret->AddChild( '2', python_basic_test::PythonPath::GetInstance() );
+			ret->AddChild( '3', python_basic_test::SimpleString::GetInstance() );
 
 
 			ret->AddLineFeed();

@@ -58,6 +58,52 @@ namespace python_basic_test
 
 
 
+	r2::iTest::TitleFunc PythonPath::GetTitleFunction() const
+	{
+		return []()->const char*
+		{
+			return "Python Path";
+		};
+	}
+	r2::iTest::DoFunc PythonPath::GetDoFunction()
+	{
+		return []()->r2::eTestResult
+		{
+			std::cout << "# " << GetInstance().GetTitleFunction()( ) << " #" << r2::linefeed;
+
+			{
+				//
+				// Python Initialize
+				//
+				Py_Initialize();
+			}
+
+			std::cout << r2::split;
+
+			{
+				std::cout << r2::tab << "+ Path" << r2::linefeed2;
+
+				std::wcout << Py_GetPath();
+
+				std::cout << r2::linefeed;
+			}
+
+			std::cout << r2::split;
+
+			{
+				//
+				// Python Finalize
+				//
+				Py_Finalize();
+			}
+
+			return r2::eTestResult::RunTest;
+		};
+	}
+
+
+
+
 	r2::iTest::TitleFunc SimpleString::GetTitleFunction() const
 	{
 		return []()->const char*
