@@ -81,15 +81,18 @@ namespace python_basic_test
 			std::cout << r2::split;
 
 			{
+				const char* run_string = "print( \'Hello Python.\')";
+
 				std::cout << r2::tab << "+ SimpleString" << r2::linefeed2;
-				std::cout << r2::tab2 << "PyRun_SimpleString( \"print( \'Hello Python.\')\" );" << r2::linefeed;
+				std::cout << r2::tab2 << run_string << r2::linefeed;
+				std::cout << r2::tab2 << "PyRun_SimpleString( run_string );" << r2::linefeed;
 
 				std::cout << r2::linefeed;
 
 				std::cout << r2::tab3;
 				std::cout << "- ";
 
-				PyRun_SimpleString( "print(\'Hello Python.\')" );
+				PyRun_SimpleString( run_string );
 			}
 
 			std::cout << r2::split;
