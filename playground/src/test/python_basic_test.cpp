@@ -84,7 +84,7 @@ namespace python_basic_test
 				const char* run_string = "print( \'Hello Python.\')";
 
 				std::cout << r2::tab << "+ SimpleString" << r2::linefeed2;
-				std::cout << r2::tab2 << run_string << r2::linefeed;
+				std::cout << r2::tab2 << "const char* run_string = ( " << run_string << " );" << r2::linefeed;
 				std::cout << r2::tab2 << "PyRun_SimpleString( run_string );" << r2::linefeed;
 
 				std::cout << r2::linefeed;
