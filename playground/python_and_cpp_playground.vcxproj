@@ -115,7 +115,7 @@
       <SubSystem>Console</SubSystem>
     </Link>
     <PostBuildEvent>
-      <Command>xcopy "$(ProjectDir)\python64\dlls\*.*" "$(OutDir)" /D /I /F /Y</Command>
+      <Command>xcopy "$(ProjectDir)\python64\dll\*.*" "$(OutDir)" /D /I /F /Y</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -133,7 +133,7 @@
       <SubSystem>Console</SubSystem>
     </Link>
     <PostBuildEvent>
-      <Command>xcopy "$(ProjectDir)\python64\dlls\*.*" "$(OutDir)" /D /I /F /Y</Command>
+      <Command>xcopy "$(ProjectDir)\python64\dll\*.*" "$(OutDir)" /D /I /F /Y</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -155,7 +155,7 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
     <PostBuildEvent>
-      <Command>xcopy "$(ProjectDir)\python64\dlls\*.*" "$(OutDir)" /D /I /F /Y</Command>
+      <Command>xcopy "$(ProjectDir)\python64\dll\*.*" "$(OutDir)" /D /I /F /Y</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -177,7 +177,7 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
     <PostBuildEvent>
-      <Command>xcopy "$(ProjectDir)\python64\dlls\*.*" "$(OutDir)" /D /I /F /Y</Command>
+      <Command>xcopy "$(ProjectDir)\python64\dll\*.*" "$(OutDir)" /D /I /F /Y</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
