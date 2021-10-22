@@ -12,6 +12,13 @@ namespace python_basic_test
 		DoFunc GetDoFunction() override;
 	};
 
+	class PythonVersion : public r2::iTest, public r2::SingleTon<PythonVersion>
+	{
+	public:
+		TitleFunc GetTitleFunction() const override;
+		DoFunc GetDoFunction() override;
+	};
+
 	class PythonPath : public r2::iTest, public r2::SingleTon<PythonPath>
 	{
 	public:

@@ -58,6 +58,52 @@ namespace python_basic_test
 
 
 
+	r2::iTest::TitleFunc PythonVersion::GetTitleFunction() const
+	{
+		return []()->const char*
+		{
+			return "Python Version";
+		};
+	}
+	r2::iTest::DoFunc PythonVersion::GetDoFunction()
+	{
+		return []()->r2::eTestResult
+		{
+			std::cout << "# " << GetInstance().GetTitleFunction()( ) << " #" << r2::linefeed;
+
+			{
+				//
+				// Python Initialize
+				//
+				Py_Initialize();
+			}
+
+			std::cout << r2::split;
+
+			{
+				std::cout << r2::tab << "+ Version" << r2::linefeed2;
+
+				std::cout << r2::tab2;
+				std::wcout << Py_GetVersion();
+
+				std::cout << r2::linefeed;
+			}
+
+			std::cout << r2::split;
+
+			{
+				//
+				// Python Finalize
+				//
+				Py_Finalize();
+			}
+
+			return r2::eTestResult::RunTest;
+		};
+	}
+
+
+
 	r2::iTest::TitleFunc PythonPath::GetTitleFunction() const
 	{
 		return []()->const char*
