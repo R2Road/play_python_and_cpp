@@ -33,6 +33,14 @@ namespace python_basic_test
 			std::cout << r2::split;
 
 			{
+				std::cout << r2::tab << "+ Check" << r2::linefeed2;
+				std::cout << r2::tab2 << "Py_IsInitialized();" << r2::linefeed;
+				std::cout << r2::tab3 << "- " << ( Py_IsInitialized() ? "True" : "False" ) << r2::linefeed;
+			}
+
+			std::cout << r2::split;
+
+			{
 				//
 				// Python Finalize
 				//
