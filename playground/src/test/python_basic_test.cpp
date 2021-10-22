@@ -71,10 +71,10 @@ namespace python_basic_test
 		{
 			std::cout << "# " << GetInstance().GetTitleFunction()( ) << " #" << r2::linefeed;
 
+			//
+			// Python Initialize
+			//
 			{
-				//
-				// Python Initialize
-				//
 				Py_Initialize();
 			}
 
@@ -91,10 +91,10 @@ namespace python_basic_test
 
 			std::cout << r2::split;
 
+			//
+			// Python Finalize
+			//
 			{
-				//
-				// Python Finalize
-				//
 				Py_Finalize();
 			}
 
@@ -117,10 +117,10 @@ namespace python_basic_test
 		{
 			std::cout << "# " << GetInstance().GetTitleFunction()( ) << " #" << r2::linefeed;
 
+			//
+			// Python Initialize
+			//
 			{
-				//
-				// Python Initialize
-				//
 				Py_Initialize();
 			}
 
@@ -136,10 +136,10 @@ namespace python_basic_test
 
 			std::cout << r2::split;
 
+			//
+			// Python Finalize
+			//
 			{
-				//
-				// Python Finalize
-				//
 				Py_Finalize();
 			}
 
@@ -163,10 +163,10 @@ namespace python_basic_test
 		{
 			std::cout << "# " << GetInstance().GetTitleFunction()( ) << " #" << r2::linefeed;
 
+			//
+			// Python Initialize
+			//
 			{
-				//
-				// Python Initialize
-				//
 				Py_Initialize();
 			}
 
@@ -189,10 +189,10 @@ namespace python_basic_test
 
 			std::cout << r2::split;
 
+			//
+			// Python Finalize
+			//
 			{
-				//
-				// Python Finalize
-				//
 				Py_Finalize();
 			}
 
