@@ -13,7 +13,7 @@ int main()
 	//
 	// Environment : Title
 	//
-	SetConsoleTitle( TEXT( "lua_and_cpp_playground" ) );
+	SetConsoleTitle( TEXT( "python_and_cpp_playground" ) );
 
 	//
 	// Environment : Size
