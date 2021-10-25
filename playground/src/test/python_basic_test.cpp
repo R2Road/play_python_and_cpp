@@ -1,6 +1,8 @@
 ﻿#include "pch.h"
 #include "python_basic_test.h"
 
+#include <filesystem>
+
 #include "base/r2_eTestResult.h"
 
 namespace python_basic_test
@@ -141,6 +143,24 @@ namespace python_basic_test
 			//
 			{
 				Py_Finalize();
+			}
+
+			//
+			//
+			//
+			{
+				std::filesystem::path pivot_path = std::filesystem::current_path() / "python64";
+				std::cout << pivot_path << r2::linefeed;
+
+				std::filesystem::path dll_path = pivot_path;
+				dll_path /= "DLLs";
+				std::cout << dll_path << r2::linefeed;
+
+				std::filesystem::path lib_path = pivot_path;
+				lib_path /= "Lib";
+				std::cout << lib_path << r2::linefeed;
+
+				std::cout << r2::split;
 			}
 
 			return r2::eTestResult::RunTest;
