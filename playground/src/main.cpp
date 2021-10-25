@@ -7,6 +7,7 @@
 
 #include "base/r2_Director.h"
 #include "menu/r2_RootMenu.h"
+#include "helper/r2_PythonHelper.h"
 
 int main()
 {
@@ -28,6 +29,13 @@ int main()
 		RECT rectClient;
 		GetClientRect( hWnd, &rectClient );
 		MoveWindow( hWnd, 0, 0, rectClient.right - rectClient.left, rectClient.bottom - rectClient.top, TRUE );
+	}
+
+	//
+	// Environment : Python
+	//
+	{
+		r2::PythonHelper::PathSetup();
 	}
 
 	//
