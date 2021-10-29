@@ -144,6 +144,18 @@ namespace python_basic_test
 			std::cout << r2::split;
 
 			{
+				std::cout << r2::tab << "+ Program Full Path" << r2::linefeed2;
+
+				std::cout << r2::tab2;
+
+				std::wcout << Py_GetProgramFullPath();
+
+				std::cout << r2::linefeed;
+			}
+
+			std::cout << r2::split;
+
+			{
 				std::cout << r2::tab << "+ Python Home" << r2::linefeed2;
 
 				std::cout << r2::tab2;
