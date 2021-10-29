@@ -66,14 +66,14 @@ namespace python_basic_test
 
 
 
-	r2::iTest::TitleFunc PythonVersion::GetTitleFunction() const
+	r2::iTest::TitleFunc PythonInfo::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
-			return "Python Version";
+			return "Python Info";
 		};
 	}
-	r2::iTest::DoFunc PythonVersion::GetDoFunction()
+	r2::iTest::DoFunc PythonInfo::GetDoFunction()
 	{
 		return []()->r2::eTestResult
 		{
