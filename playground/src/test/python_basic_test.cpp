@@ -99,6 +99,62 @@ namespace python_basic_test
 
 			std::cout << r2::split;
 
+			{
+				std::cout << r2::tab << "+ Platform" << r2::linefeed2;
+
+				std::cout << r2::tab2;
+				std::wcout << Py_GetPlatform();
+
+				std::cout << r2::linefeed;
+			}
+
+			std::cout << r2::split;
+
+			{
+				std::cout << r2::tab << "+ Compiler" << r2::linefeed2;
+
+				std::cout << r2::tab2;
+				std::wcout << Py_GetCompiler();
+
+				std::cout << r2::linefeed;
+			}
+
+			std::cout << r2::split;
+
+			{
+				std::cout << r2::tab << "+ Build Info" << r2::linefeed2;
+
+				std::cout << r2::tab2;
+				std::wcout << Py_GetBuildInfo();
+
+				std::cout << r2::linefeed;
+			}
+
+			std::cout << r2::split;
+
+			{
+				std::cout << r2::tab << "+ Program Name" << r2::linefeed2;
+
+				std::cout << r2::tab2;
+				std::wcout << Py_GetProgramName();
+
+				std::cout << r2::linefeed;
+			}
+
+			std::cout << r2::split;
+
+			{
+				std::cout << r2::tab << "+ Python Home" << r2::linefeed2;
+
+				std::cout << r2::tab2;
+
+				std::wcout << ( nullptr != Py_GetPythonHome() ? Py_GetPythonHome() : L"null" );
+
+				std::cout << r2::linefeed;
+			}
+
+			std::cout << r2::split;
+
 			//
 			// Python Finalize
 			//
