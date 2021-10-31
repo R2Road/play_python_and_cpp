@@ -167,6 +167,16 @@ namespace python_basic_test
 
 			std::cout << r2::split;
 
+			{
+				std::cout << r2::tab << "+ Copyright" << r2::linefeed;
+
+				std::wcout << Py_GetCopyright();
+
+				std::cout << r2::linefeed;
+			}
+
+			std::cout << r2::split;
+
 			//
 			// Python Finalize
 			//
