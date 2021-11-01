@@ -3,6 +3,11 @@
 
 #include "base/r2_eTestResult.h"
 
+//
+// # ref
+// https://python.flowdas.com/c-api/init.html#c.Py_SetPath
+//
+
 namespace python_basic_test
 {
 	r2::iTest::TitleFunc Initialize_And_Finalize::GetTitleFunction() const
