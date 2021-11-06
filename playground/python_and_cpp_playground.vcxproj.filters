@@ -21,6 +21,9 @@
     <ClCompile Include="src\helper\r2_PythonHelper.cpp">
       <Filter>helper</Filter>
     </ClCompile>
+    <ClCompile Include="src\test\python_script_run_test.cpp">
+      <Filter>test</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\pch.h" />
@@ -53,6 +56,9 @@
     </ClInclude>
     <ClInclude Include="src\helper\r2_PythonHelper.h">
       <Filter>helper</Filter>
+    </ClInclude>
+    <ClInclude Include="src\test\python_script_run_test.h">
+      <Filter>test</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

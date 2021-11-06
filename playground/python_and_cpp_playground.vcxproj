@@ -36,6 +36,7 @@
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">pch.h</PrecompiledHeaderFile>
     </ClCompile>
     <ClCompile Include="src\test\python_basic_test.cpp" />
+    <ClCompile Include="src\test\python_script_run_test.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\base\r2_Assert.h" />
@@ -49,6 +50,7 @@
     <ClInclude Include="src\menu\r2_RootMenu.h" />
     <ClInclude Include="src\pch.h" />
     <ClInclude Include="src\test\python_basic_test.h" />
+    <ClInclude Include="src\test\python_script_run_test.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
