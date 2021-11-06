@@ -23,6 +23,7 @@
     <ClCompile Include="src\base\r2_FrameManager.cpp" />
     <ClCompile Include="src\base\r2_Menu.cpp" />
     <ClCompile Include="src\helper\r2_PythonHelper.cpp" />
+    <ClCompile Include="src\helper\r2_PythonInstance.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\menu\r2_RootMenu.cpp" />
     <ClCompile Include="src\pch.cpp">
@@ -47,6 +48,7 @@
     <ClInclude Include="src\base\r2_Menu.h" />
     <ClInclude Include="src\base\r2_Singleton.h" />
     <ClInclude Include="src\helper\r2_PythonHelper.h" />
+    <ClInclude Include="src\helper\r2_PythonInstance.h" />
     <ClInclude Include="src\menu\r2_RootMenu.h" />
     <ClInclude Include="src\pch.h" />
     <ClInclude Include="src\test\python_basic_test.h" />

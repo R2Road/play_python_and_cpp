@@ -2,6 +2,7 @@
 #include "python_script_run_test.h"
 
 #include "base/r2_eTestResult.h"
+#include "helper/r2_PythonInstance.h"
 
 //
 // # ref
@@ -24,11 +25,9 @@ namespace python_script_run_test
 			std::cout << "# " << GetInstance().GetTitleFunction()( ) << " #" << r2::linefeed;
 
 			//
-			// Python Initialize
+			// Python Initialize And Finalize
 			//
-			{
-				Py_Initialize();
-			}
+			r2::PythonInstance python_instance;
 
 			std::cout << r2::split;
 
@@ -48,13 +47,6 @@ namespace python_script_run_test
 			}
 
 			std::cout << r2::split;
-
-			//
-			// Python Finalize
-			//
-			{
-				Py_Finalize();
-			}
 
 			return r2::eTestResult::RunTest;
 		};
