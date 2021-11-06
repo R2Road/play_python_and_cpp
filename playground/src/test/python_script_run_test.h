@@ -18,4 +18,11 @@ namespace python_script_run_test
 		TitleFunc GetTitleFunction() const override;
 		DoFunc GetDoFunction() override;
 	};
+
+	class SimpleFile_2 : public r2::iTest, public r2::SingleTon<SimpleFile_2>
+	{
+	public:
+		TitleFunc GetTitleFunction() const override;
+		DoFunc GetDoFunction() override;
+	};
 }

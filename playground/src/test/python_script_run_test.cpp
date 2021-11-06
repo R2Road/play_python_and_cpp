@@ -109,4 +109,62 @@ namespace python_script_run_test
 			return r2::eTestResult::RunTest;
 		};
 	}
+
+
+
+	r2::iTest::TitleFunc SimpleFile_2::GetTitleFunction() const
+	{
+		return []()->const char*
+		{
+			return "SimpleFile 2";
+		};
+	}
+	r2::iTest::DoFunc SimpleFile_2::GetDoFunction()
+	{
+		return []()->r2::eTestResult
+		{
+			std::cout << "# " << GetInstance().GetTitleFunction()( ) << " #" << r2::linefeed;
+
+			//
+			// Python Initialize And Finalize
+			//
+			r2::PythonInstance python_instance;
+
+			std::cout << r2::split;
+
+			{
+				const char* script_path_string = "resources/pyscript/python_script_run_test__simplestring_2.py";
+
+				std::cout << r2::tab << "+ Declaration" << r2::linefeed2;
+				std::cout << r2::tab2 << "const char* script_path_string = " << script_path_string << ";" << r2::linefeed;
+				std::cout << r2::linefeed2;
+
+				PyObject *fo = Py_BuildValue( "s", script_path_string );
+				FILE* fp = _Py_fopen_obj( fo, "r" );
+
+				std::cout << r2::tab << "+ Declaration" << r2::linefeed2;
+				std::cout << r2::tab2 << "PyObject *fo = Py_BuildValue( \"s\", script_path_string );" << r2::linefeed;
+				std::cout << r2::tab2 << "FILE* fp = _Py_fopen_obj( fo, \"r\" );" << r2::linefeed;
+				std::cout << r2::linefeed2;
+
+				if( fp )
+				{
+					std::cout << r2::tab << "+ Run" << r2::linefeed2;
+					std::cout << r2::tab2 << "PyRun_SimpleFile( fp, script_path_string );" << r2::linefeed2;
+
+					std::cout << r2::tab2 << "> ";
+					PyRun_SimpleFile( fp, script_path_string );
+					std::cout << r2::linefeed2;
+				}
+				else
+				{
+					std::cout << r2::tab << "Failed : File Open" << r2::linefeed;
+				}
+			}
+
+			std::cout << r2::split;
+
+			return r2::eTestResult::RunTest;
+		};
+	}
 }
