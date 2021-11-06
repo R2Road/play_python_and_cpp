@@ -30,7 +30,7 @@ namespace r2
 
 
 			ret->AddChild( '4', python_script_run_test::SimpleString::GetInstance() );
-			ret->AddChild( '5', python_script_run_test::SimpleFile::GetInstance() );
+			ret->AddChild( '5', python_script_run_test::SimpleFile_1::GetInstance() );
 
 
 			ret->AddSplit();

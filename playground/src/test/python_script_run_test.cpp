@@ -54,14 +54,14 @@ namespace python_script_run_test
 
 
 
-	r2::iTest::TitleFunc SimpleFile::GetTitleFunction() const
+	r2::iTest::TitleFunc SimpleFile_1::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
-			return "SimpleFile";
+			return "SimpleFile 1";
 		};
 	}
-	r2::iTest::DoFunc SimpleFile::GetDoFunction()
+	r2::iTest::DoFunc SimpleFile_1::GetDoFunction()
 	{
 		return []()->r2::eTestResult
 		{
