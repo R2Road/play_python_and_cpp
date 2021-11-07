@@ -75,7 +75,7 @@ namespace python_script_run_test
 			std::cout << r2::split;
 
 			{
-				const char* script_path_string = "resources/pyscript/simplefile_test.py";
+				const char* script_path_string = "resources/pyscript/python_script_run_test__simplestring_1.py";
 
 				std::cout << r2::tab << "+ Declaration" << r2::linefeed2;
 				std::cout << r2::tab2 << "const char* script_path_string = " << script_path_string << ";" << r2::linefeed;
