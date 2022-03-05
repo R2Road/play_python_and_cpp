@@ -1,7 +1,7 @@
 ﻿#pragma once
 
 #include "base/r2_iTest.h"
-#include "base/r2_Singleton.h"
+#include "r2/r2_Singleton.h"
 
 namespace python_script_run_test
 {
