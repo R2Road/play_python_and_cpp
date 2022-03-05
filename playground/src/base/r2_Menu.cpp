@@ -101,7 +101,7 @@ namespace r2cm
 			}
 		}
 
-		return eTestEndAction::RunTest;
+		return eTestEndAction::None;
 	}
 
 	void Menu::AddChild( const char key_code, iItem& test_obj )
@@ -115,14 +115,14 @@ namespace r2cm
 	void Menu::AddLineFeed()
 	{
 		static const std::function<const char*()> func_title = []()->const char* { return ""; };
-		static const std::function<const r2cm::eTestEndAction()> func_test = []()->const r2cm::eTestEndAction { return r2cm::eTestEndAction::RunTest; };
+		static const std::function<const r2cm::eTestEndAction()> func_test = []()->const r2cm::eTestEndAction { return r2cm::eTestEndAction::None; };
 
 		mTests.push_back( { KeyCode4LineFeed, func_title, func_test } );
 	}
 	void Menu::AddSplit()
 	{
 		static const std::function<const char*( )> func_title = []()->const char* { return ""; };
-		static const std::function<const r2cm::eTestEndAction()> func_test = []()->const r2cm::eTestEndAction { return r2cm::eTestEndAction::RunTest; };
+		static const std::function<const r2cm::eTestEndAction()> func_test = []()->const r2cm::eTestEndAction { return r2cm::eTestEndAction::None; };
 
 		mTests.push_back( { KeyCode4Split, func_title, func_test } );
 	}

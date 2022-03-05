@@ -48,7 +48,7 @@ namespace python_script_run_test
 
 			std::cout << r2::split;
 
-			return r2cm::eTestEndAction::RunTest;
+			return r2cm::eTestEndAction::None;
 		};
 	}
 
@@ -106,7 +106,7 @@ namespace python_script_run_test
 
 			std::cout << r2::split;
 
-			return r2cm::eTestEndAction::RunTest;
+			return r2cm::eTestEndAction::None;
 		};
 	}
 
@@ -164,7 +164,7 @@ namespace python_script_run_test
 
 			std::cout << r2::split;
 
-			return r2cm::eTestEndAction::RunTest;
+			return r2cm::eTestEndAction::None;
 		};
 	}
 }

@@ -28,14 +28,14 @@ namespace r2cm
 
 			switch( mMenu->Do( input ) )
 			{
-			case eTestEndAction::RunTest:
+			case eTestEndAction::None:
 				std::cout << r2::linefeed;
 				system( "pause" );
 
 				system( "cls" );
 				break;
 
-			case eTestEndAction::RunTest_Without_Pause:
+			case eTestEndAction::Pause:
 			case eTestEndAction::ChangeScene:
 				system( "cls" );
 				break;
