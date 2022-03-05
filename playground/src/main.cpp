@@ -6,7 +6,7 @@
 //#endif
 
 #include "base/r2_Director.h"
-#include "menu/r2_RootMenu.h"
+#include "test_python/RootMenu.h"
 #include "helper/r2_PythonHelper.h"
 
 int main()

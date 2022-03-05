@@ -25,7 +25,6 @@
     <ClCompile Include="src\helper\r2_PythonHelper.cpp" />
     <ClCompile Include="src\helper\r2_PythonInstance.cpp" />
     <ClCompile Include="src\main.cpp" />
-    <ClCompile Include="src\menu\r2_RootMenu.cpp" />
     <ClCompile Include="src\pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
@@ -38,6 +37,7 @@
     </ClCompile>
     <ClCompile Include="src\test\python_basic_test.cpp" />
     <ClCompile Include="src\test\python_script_run_test.cpp" />
+    <ClCompile Include="src\test_python\RootMenu.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\base\r2_Assert.h" />
@@ -49,10 +49,10 @@
     <ClInclude Include="src\base\r2_Singleton.h" />
     <ClInclude Include="src\helper\r2_PythonHelper.h" />
     <ClInclude Include="src\helper\r2_PythonInstance.h" />
-    <ClInclude Include="src\menu\r2_RootMenu.h" />
     <ClInclude Include="src\pch.h" />
     <ClInclude Include="src\test\python_basic_test.h" />
     <ClInclude Include="src\test\python_script_run_test.h" />
+    <ClInclude Include="src\test_python\RootMenu.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
