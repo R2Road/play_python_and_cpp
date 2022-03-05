@@ -49,8 +49,8 @@ namespace r2cm
 	public:
 		eTestEndAction Do( const int key_code );
 
-		void AddChild( const char key_code, iItem& test_obj );
-		void AddChild( const char key_code, const std::function<const char*( )> func_title, const std::function<const r2cm::eTestEndAction()> func_test );
+		void AddItem( const char key_code, iItem& test_obj );
+		void AddItem( const char key_code, const std::function<const char*( )> func_title, const std::function<const r2cm::eTestEndAction()> func_test );
 		void AddLineFeed();
 		void AddSplit();
 

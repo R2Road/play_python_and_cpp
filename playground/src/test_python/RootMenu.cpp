@@ -18,23 +18,23 @@ r2cm::MenuUp RootMenu::Create( r2cm::Director& director )
 	) );
 
 	{
-		ret->AddChild( '1', python_basic_test::Initialize_And_Finalize::GetInstance() );
-		ret->AddChild( '2', python_basic_test::PythonInfo::GetInstance() );
-		ret->AddChild( '3', python_basic_test::PythonPath::GetInstance() );
+		ret->AddItem( '1', python_basic_test::Initialize_And_Finalize::GetInstance() );
+		ret->AddItem( '2', python_basic_test::PythonInfo::GetInstance() );
+		ret->AddItem( '3', python_basic_test::PythonPath::GetInstance() );
 
 
 		ret->AddLineFeed();
 
 
-		ret->AddChild( '4', python_script_run_test::SimpleString::GetInstance() );
-		ret->AddChild( '5', python_script_run_test::SimpleFile_1::GetInstance() );
-		ret->AddChild( '6', python_script_run_test::SimpleFile_2::GetInstance() );
+		ret->AddItem( '4', python_script_run_test::SimpleString::GetInstance() );
+		ret->AddItem( '5', python_script_run_test::SimpleFile_1::GetInstance() );
+		ret->AddItem( '6', python_script_run_test::SimpleFile_2::GetInstance() );
 
 
 		ret->AddSplit();
 
 
-		ret->AddChild(
+		ret->AddItem(
 			27
 			, []()->const char* { return "Exit"; }
 			, []()->r2cm::eTestEndAction { return r2cm::eTestEndAction::Exit; }
