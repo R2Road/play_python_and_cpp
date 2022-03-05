@@ -11,14 +11,14 @@
 
 namespace python_script_run_test
 {
-	r2::iTest::TitleFunc SimpleString::GetTitleFunction() const
+	r2::iItem::TitleFunc SimpleString::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
 			return "SimpleString";
 		};
 	}
-	r2::iTest::DoFunc SimpleString::GetDoFunction()
+	r2::iItem::DoFunc SimpleString::GetDoFunction()
 	{
 		return []()->r2::eTestResult
 		{
@@ -54,14 +54,14 @@ namespace python_script_run_test
 
 
 
-	r2::iTest::TitleFunc SimpleFile_1::GetTitleFunction() const
+	r2::iItem::TitleFunc SimpleFile_1::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
 			return "SimpleFile 1";
 		};
 	}
-	r2::iTest::DoFunc SimpleFile_1::GetDoFunction()
+	r2::iItem::DoFunc SimpleFile_1::GetDoFunction()
 	{
 		return []()->r2::eTestResult
 		{
@@ -112,14 +112,14 @@ namespace python_script_run_test
 
 
 
-	r2::iTest::TitleFunc SimpleFile_2::GetTitleFunction() const
+	r2::iItem::TitleFunc SimpleFile_2::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
 			return "SimpleFile 2";
 		};
 	}
-	r2::iTest::DoFunc SimpleFile_2::GetDoFunction()
+	r2::iItem::DoFunc SimpleFile_2::GetDoFunction()
 	{
 		return []()->r2::eTestResult
 		{

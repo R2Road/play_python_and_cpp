@@ -5,21 +5,21 @@
 
 namespace python_basic_test
 {
-	class Initialize_And_Finalize : public r2::iTest, public r2::SingleTon<Initialize_And_Finalize>
+	class Initialize_And_Finalize : public r2::iItem, public r2::SingleTon<Initialize_And_Finalize>
 	{
 	public:
 		TitleFunc GetTitleFunction() const override;
 		DoFunc GetDoFunction() override;
 	};
 
-	class PythonInfo : public r2::iTest, public r2::SingleTon<PythonInfo>
+	class PythonInfo : public r2::iItem, public r2::SingleTon<PythonInfo>
 	{
 	public:
 		TitleFunc GetTitleFunction() const override;
 		DoFunc GetDoFunction() override;
 	};
 
-	class PythonPath : public r2::iTest, public r2::SingleTon<PythonPath>
+	class PythonPath : public r2::iItem, public r2::SingleTon<PythonPath>
 	{
 	public:
 		TitleFunc GetTitleFunction() const override;

@@ -10,14 +10,14 @@
 
 namespace python_basic_test
 {
-	r2::iTest::TitleFunc Initialize_And_Finalize::GetTitleFunction() const
+	r2::iItem::TitleFunc Initialize_And_Finalize::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
 			return "Python Initialize And Finalize";
 		};
 	}
-	r2::iTest::DoFunc Initialize_And_Finalize::GetDoFunction()
+	r2::iItem::DoFunc Initialize_And_Finalize::GetDoFunction()
 	{
 		return []()->r2::eTestResult
 		{
@@ -71,14 +71,14 @@ namespace python_basic_test
 
 
 
-	r2::iTest::TitleFunc PythonInfo::GetTitleFunction() const
+	r2::iItem::TitleFunc PythonInfo::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
 			return "Python Info";
 		};
 	}
-	r2::iTest::DoFunc PythonInfo::GetDoFunction()
+	r2::iItem::DoFunc PythonInfo::GetDoFunction()
 	{
 		return []()->r2::eTestResult
 		{
@@ -185,14 +185,14 @@ namespace python_basic_test
 
 
 
-	r2::iTest::TitleFunc PythonPath::GetTitleFunction() const
+	r2::iItem::TitleFunc PythonPath::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
 			return "Python Path";
 		};
 	}
-	r2::iTest::DoFunc PythonPath::GetDoFunction()
+	r2::iItem::DoFunc PythonPath::GetDoFunction()
 	{
 		return []()->r2::eTestResult
 		{
