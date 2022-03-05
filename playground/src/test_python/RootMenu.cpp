@@ -2,7 +2,6 @@
 #include "RootMenu.h"
 
 #include <conio.h>
-#include <sstream>
 
 #include "base/r2_Director.h"
 #include "base/r2_eTestResult.h"
