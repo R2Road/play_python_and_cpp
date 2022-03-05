@@ -1,7 +1,7 @@
 ﻿#include "pch.h"
 #include "python_basic_test.h"
 
-#include "base/r2_eTestResult.h"
+#include "base/r2cm_eTestEndAction.h"
 
 //
 // # ref
@@ -10,14 +10,14 @@
 
 namespace python_basic_test
 {
-	r2cm::iItem::TitleFunc Initialize_And_Finalize::GetTitleFunction() const
+	r2cm::iItem::TitleFuncT Initialize_And_Finalize::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
 			return "Python Initialize And Finalize";
 		};
 	}
-	r2cm::iItem::DoFunc Initialize_And_Finalize::GetDoFunction()
+	r2cm::iItem::DoFuncT Initialize_And_Finalize::GetDoFunction()
 	{
 		return []()->r2cm::eTestEndAction
 		{
@@ -71,14 +71,14 @@ namespace python_basic_test
 
 
 
-	r2cm::iItem::TitleFunc PythonInfo::GetTitleFunction() const
+	r2cm::iItem::TitleFuncT PythonInfo::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
 			return "Python Info";
 		};
 	}
-	r2cm::iItem::DoFunc PythonInfo::GetDoFunction()
+	r2cm::iItem::DoFuncT PythonInfo::GetDoFunction()
 	{
 		return []()->r2cm::eTestEndAction
 		{
@@ -185,14 +185,14 @@ namespace python_basic_test
 
 
 
-	r2cm::iItem::TitleFunc PythonPath::GetTitleFunction() const
+	r2cm::iItem::TitleFuncT PythonPath::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
 			return "Python Path";
 		};
 	}
-	r2cm::iItem::DoFunc PythonPath::GetDoFunction()
+	r2cm::iItem::DoFuncT PythonPath::GetDoFunction()
 	{
 		return []()->r2cm::eTestEndAction
 		{

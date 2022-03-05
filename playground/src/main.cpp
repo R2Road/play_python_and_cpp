@@ -5,7 +5,7 @@
 //	#include <vld.h>
 //#endif
 
-#include "base/r2_Director.h"
+#include "base/r2cm_Director.h"
 #include "test_python/RootMenu.h"
 #include "helper/r2_PythonHelper.h"
 
@@ -47,7 +47,7 @@ int main()
 	//
 	// Process
 	//
-	director.Update();
+	director.Run();
 
 	return 0;
 }

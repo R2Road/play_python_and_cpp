@@ -8,21 +8,21 @@ namespace python_script_run_test
 	class SimpleString : public r2cm::iItem, public r2::SingleTon<SimpleString>
 	{
 	public:
-		TitleFunc GetTitleFunction() const override;
-		DoFunc GetDoFunction() override;
+		TitleFuncT GetTitleFunction() const override;
+		DoFuncT GetDoFunction() override;
 	};
 
 	class SimpleFile_1 : public r2cm::iItem, public r2::SingleTon<SimpleFile_1>
 	{
 	public:
-		TitleFunc GetTitleFunction() const override;
-		DoFunc GetDoFunction() override;
+		TitleFuncT GetTitleFunction() const override;
+		DoFuncT GetDoFunction() override;
 	};
 
 	class SimpleFile_2 : public r2cm::iItem, public r2::SingleTon<SimpleFile_2>
 	{
 	public:
-		TitleFunc GetTitleFunction() const override;
-		DoFunc GetDoFunction() override;
+		TitleFuncT GetTitleFunction() const override;
+		DoFuncT GetDoFunction() override;
 	};
 }

@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\base\r2_Director.cpp" />
-    <ClCompile Include="src\base\r2_Menu.cpp" />
+    <ClCompile Include="src\base\r2cm_Director.cpp" />
+    <ClCompile Include="src\base\r2cm_Menu.cpp" />
     <ClCompile Include="src\helper\r2_PythonHelper.cpp" />
     <ClCompile Include="src\helper\r2_PythonInstance.cpp" />
     <ClCompile Include="src\main.cpp" />
@@ -40,10 +40,10 @@
     <ClCompile Include="src\test_python\RootMenu.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\base\r2_Director.h" />
-    <ClInclude Include="src\base\r2_eTestResult.h" />
+    <ClInclude Include="src\base\r2cm_Director.h" />
+    <ClInclude Include="src\base\r2cm_eTestEndAction.h" />
     <ClInclude Include="src\base\r2_iTest.h" />
-    <ClInclude Include="src\base\r2_Menu.h" />
+    <ClInclude Include="src\base\r2cm_Menu.h" />
     <ClInclude Include="src\helper\r2_PythonHelper.h" />
     <ClInclude Include="src\helper\r2_PythonInstance.h" />
     <ClInclude Include="src\pch.h" />

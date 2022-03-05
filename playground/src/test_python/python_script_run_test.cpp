@@ -1,7 +1,7 @@
 ﻿#include "pch.h"
 #include "python_script_run_test.h"
 
-#include "base/r2_eTestResult.h"
+#include "base/r2cm_eTestEndAction.h"
 #include "helper/r2_PythonInstance.h"
 
 //
@@ -11,14 +11,14 @@
 
 namespace python_script_run_test
 {
-	r2cm::iItem::TitleFunc SimpleString::GetTitleFunction() const
+	r2cm::iItem::TitleFuncT SimpleString::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
 			return "SimpleString";
 		};
 	}
-	r2cm::iItem::DoFunc SimpleString::GetDoFunction()
+	r2cm::iItem::DoFuncT SimpleString::GetDoFunction()
 	{
 		return []()->r2cm::eTestEndAction
 		{
@@ -54,14 +54,14 @@ namespace python_script_run_test
 
 
 
-	r2cm::iItem::TitleFunc SimpleFile_1::GetTitleFunction() const
+	r2cm::iItem::TitleFuncT SimpleFile_1::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
 			return "SimpleFile 1";
 		};
 	}
-	r2cm::iItem::DoFunc SimpleFile_1::GetDoFunction()
+	r2cm::iItem::DoFuncT SimpleFile_1::GetDoFunction()
 	{
 		return []()->r2cm::eTestEndAction
 		{
@@ -112,14 +112,14 @@ namespace python_script_run_test
 
 
 
-	r2cm::iItem::TitleFunc SimpleFile_2::GetTitleFunction() const
+	r2cm::iItem::TitleFuncT SimpleFile_2::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
 			return "SimpleFile 2";
 		};
 	}
-	r2cm::iItem::DoFunc SimpleFile_2::GetDoFunction()
+	r2cm::iItem::DoFuncT SimpleFile_2::GetDoFunction()
 	{
 		return []()->r2cm::eTestEndAction
 		{

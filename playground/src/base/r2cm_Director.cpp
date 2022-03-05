@@ -1,10 +1,10 @@
 #include "pch.h"
-#include "r2_Director.h"
+#include "r2cm_Director.h"
 
 #include <conio.h>
 #include <utility>
 
-#include "r2_eTestResult.h"
+#include "r2cm_eTestEndAction.h"
 
 namespace r2cm
 {
@@ -16,11 +16,15 @@ namespace r2cm
 		mMenu = std::move( menu );
 	}
 
-	void Director::Update()
+	void Director::Run()
 	{
 		int input = 0;
 		while( true )
 		{
+			system( "cls" );
+
+			mMenu->ShowTitle();
+			mMenu->ShowDescription();
 			mMenu->ShowMenu();
 			input = _getch();
 
@@ -28,15 +32,11 @@ namespace r2cm
 
 			switch( mMenu->Do( input ) )
 			{
-			case eTestEndAction::None:
-				std::cout << r2::linefeed;
-				system( "pause" );
-
-				system( "cls" );
-				break;
+			//case eTestEndAction::None: break;
 
 			case eTestEndAction::Pause:
-				system( "cls" );
+				std::cout << r2::linefeed;
+				system( "pause" );				
 				break;
 
 			case eTestEndAction::Exit:
