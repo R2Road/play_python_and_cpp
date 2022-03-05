@@ -19,7 +19,7 @@ namespace python_basic_test
 	}
 	r2cm::iItem::DoFunc Initialize_And_Finalize::GetDoFunction()
 	{
-		return []()->r2cm::eTestResult
+		return []()->r2cm::eTestEndAction
 		{
 			std::cout << "# " << GetInstance().GetTitleFunction()( ) << " #" << r2::linefeed;
 
@@ -65,7 +65,7 @@ namespace python_basic_test
 
 			std::cout << r2::split;
 
-			return r2cm::eTestResult::RunTest;
+			return r2cm::eTestEndAction::RunTest;
 		};
 	}
 
@@ -80,7 +80,7 @@ namespace python_basic_test
 	}
 	r2cm::iItem::DoFunc PythonInfo::GetDoFunction()
 	{
-		return []()->r2cm::eTestResult
+		return []()->r2cm::eTestEndAction
 		{
 			std::cout << "# " << GetInstance().GetTitleFunction()( ) << " #" << r2::linefeed;
 
@@ -179,7 +179,7 @@ namespace python_basic_test
 				Py_Finalize();
 			}
 
-			return r2cm::eTestResult::RunTest;
+			return r2cm::eTestEndAction::RunTest;
 		};
 	}
 
@@ -194,7 +194,7 @@ namespace python_basic_test
 	}
 	r2cm::iItem::DoFunc PythonPath::GetDoFunction()
 	{
-		return []()->r2cm::eTestResult
+		return []()->r2cm::eTestEndAction
 		{
 			std::cout << "# " << GetInstance().GetTitleFunction()( ) << " #" << r2::linefeed;
 
@@ -224,7 +224,7 @@ namespace python_basic_test
 				Py_Finalize();
 			}
 
-			return r2cm::eTestResult::RunTest;
+			return r2cm::eTestEndAction::RunTest;
 		};
 	}
 }

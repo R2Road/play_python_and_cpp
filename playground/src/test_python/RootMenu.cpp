@@ -37,7 +37,7 @@ r2cm::MenuUp RootMenu::Create( r2cm::Director& director )
 		ret->AddChild(
 			27
 			, []()->const char* { return "Exit"; }
-			, []()->r2cm::eTestResult { return r2cm::eTestResult::Exit; }
+			, []()->r2cm::eTestEndAction { return r2cm::eTestEndAction::Exit; }
 		);
 	}
 

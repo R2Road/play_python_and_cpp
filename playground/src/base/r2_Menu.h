@@ -7,7 +7,7 @@
 
 namespace r2cm
 {
-	enum class eTestResult; 
+	enum class eTestEndAction; 
 
 	class iItem;
 	class Director;
@@ -21,7 +21,7 @@ namespace r2cm
 			TestInfo(
 				const char key_code
 				, const std::function<const char*( )> name_function
-				, const std::function<const r2cm::eTestResult()> test_function
+				, const std::function<const r2cm::eTestEndAction()> test_function
 			) :
 				KeyCode( key_code )
 				, NameFunction( name_function )
@@ -30,7 +30,7 @@ namespace r2cm
 
 			char KeyCode;
 			std::function<const char*()> NameFunction;
-			std::function<const r2cm::eTestResult()> TestFunction;
+			std::function<const r2cm::eTestEndAction()> TestFunction;
 		};
 
 		using TestContainerT = std::vector<TestInfo>;
@@ -47,10 +47,10 @@ namespace r2cm
 		void ShowItem() const;
 
 	public:
-		eTestResult Do( const int key_code );
+		eTestEndAction Do( const int key_code );
 
 		void AddChild( const char key_code, iItem& test_obj );
-		void AddChild( const char key_code, const std::function<const char*( )> func_title, const std::function<const r2cm::eTestResult()> func_test );
+		void AddChild( const char key_code, const std::function<const char*( )> func_title, const std::function<const r2cm::eTestEndAction()> func_test );
 		void AddLineFeed();
 		void AddSplit();
 

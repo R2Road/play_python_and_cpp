@@ -20,7 +20,7 @@ namespace python_script_run_test
 	}
 	r2cm::iItem::DoFunc SimpleString::GetDoFunction()
 	{
-		return []()->r2cm::eTestResult
+		return []()->r2cm::eTestEndAction
 		{
 			std::cout << "# " << GetInstance().GetTitleFunction()( ) << " #" << r2::linefeed;
 
@@ -48,7 +48,7 @@ namespace python_script_run_test
 
 			std::cout << r2::split;
 
-			return r2cm::eTestResult::RunTest;
+			return r2cm::eTestEndAction::RunTest;
 		};
 	}
 
@@ -63,7 +63,7 @@ namespace python_script_run_test
 	}
 	r2cm::iItem::DoFunc SimpleFile_1::GetDoFunction()
 	{
-		return []()->r2cm::eTestResult
+		return []()->r2cm::eTestEndAction
 		{
 			std::cout << "# " << GetInstance().GetTitleFunction()( ) << " #" << r2::linefeed;
 
@@ -106,7 +106,7 @@ namespace python_script_run_test
 
 			std::cout << r2::split;
 
-			return r2cm::eTestResult::RunTest;
+			return r2cm::eTestEndAction::RunTest;
 		};
 	}
 
@@ -121,7 +121,7 @@ namespace python_script_run_test
 	}
 	r2cm::iItem::DoFunc SimpleFile_2::GetDoFunction()
 	{
-		return []()->r2cm::eTestResult
+		return []()->r2cm::eTestEndAction
 		{
 			std::cout << "# " << GetInstance().GetTitleFunction()( ) << " #" << r2::linefeed;
 
@@ -164,7 +164,7 @@ namespace python_script_run_test
 
 			std::cout << r2::split;
 
-			return r2cm::eTestResult::RunTest;
+			return r2cm::eTestEndAction::RunTest;
 		};
 	}
 }
