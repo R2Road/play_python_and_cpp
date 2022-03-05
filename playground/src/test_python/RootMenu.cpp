@@ -9,9 +9,9 @@
 #include "python_basic_test.h"
 #include "python_script_run_test.h"
 
-r2::MenuUp RootMenu::Create( r2::Director& director )
+r2cm::MenuUp RootMenu::Create( r2cm::Director& director )
 {
-	r2::MenuUp ret( new ( std::nothrow ) r2::Menu(
+	r2cm::MenuUp ret( new ( std::nothrow ) r2cm::Menu(
 		director
 		, GetTitle()
 		, "> Add Some One"
@@ -37,7 +37,7 @@ r2::MenuUp RootMenu::Create( r2::Director& director )
 		ret->AddChild(
 			27
 			, []()->const char* { return "Exit"; }
-			, []()->r2::eTestResult { return r2::eTestResult::Exit; }
+			, []()->r2cm::eTestResult { return r2cm::eTestResult::Exit; }
 		);
 	}
 

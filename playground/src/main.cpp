@@ -41,7 +41,7 @@ int main()
 	//
 	// Setup
 	//
-	r2::Director director;
+	r2cm::Director director;
 	director.Setup( RootMenu::Create( director ) );
 
 	//

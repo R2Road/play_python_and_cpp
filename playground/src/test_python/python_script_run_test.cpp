@@ -11,16 +11,16 @@
 
 namespace python_script_run_test
 {
-	r2::iItem::TitleFunc SimpleString::GetTitleFunction() const
+	r2cm::iItem::TitleFunc SimpleString::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
 			return "SimpleString";
 		};
 	}
-	r2::iItem::DoFunc SimpleString::GetDoFunction()
+	r2cm::iItem::DoFunc SimpleString::GetDoFunction()
 	{
-		return []()->r2::eTestResult
+		return []()->r2cm::eTestResult
 		{
 			std::cout << "# " << GetInstance().GetTitleFunction()( ) << " #" << r2::linefeed;
 
@@ -48,22 +48,22 @@ namespace python_script_run_test
 
 			std::cout << r2::split;
 
-			return r2::eTestResult::RunTest;
+			return r2cm::eTestResult::RunTest;
 		};
 	}
 
 
 
-	r2::iItem::TitleFunc SimpleFile_1::GetTitleFunction() const
+	r2cm::iItem::TitleFunc SimpleFile_1::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
 			return "SimpleFile 1";
 		};
 	}
-	r2::iItem::DoFunc SimpleFile_1::GetDoFunction()
+	r2cm::iItem::DoFunc SimpleFile_1::GetDoFunction()
 	{
-		return []()->r2::eTestResult
+		return []()->r2cm::eTestResult
 		{
 			std::cout << "# " << GetInstance().GetTitleFunction()( ) << " #" << r2::linefeed;
 
@@ -106,22 +106,22 @@ namespace python_script_run_test
 
 			std::cout << r2::split;
 
-			return r2::eTestResult::RunTest;
+			return r2cm::eTestResult::RunTest;
 		};
 	}
 
 
 
-	r2::iItem::TitleFunc SimpleFile_2::GetTitleFunction() const
+	r2cm::iItem::TitleFunc SimpleFile_2::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
 			return "SimpleFile 2";
 		};
 	}
-	r2::iItem::DoFunc SimpleFile_2::GetDoFunction()
+	r2cm::iItem::DoFunc SimpleFile_2::GetDoFunction()
 	{
-		return []()->r2::eTestResult
+		return []()->r2cm::eTestResult
 		{
 			std::cout << "# " << GetInstance().GetTitleFunction()( ) << " #" << r2::linefeed;
 
@@ -164,7 +164,7 @@ namespace python_script_run_test
 
 			std::cout << r2::split;
 
-			return r2::eTestResult::RunTest;
+			return r2cm::eTestResult::RunTest;
 		};
 	}
 }

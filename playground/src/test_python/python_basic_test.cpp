@@ -10,16 +10,16 @@
 
 namespace python_basic_test
 {
-	r2::iItem::TitleFunc Initialize_And_Finalize::GetTitleFunction() const
+	r2cm::iItem::TitleFunc Initialize_And_Finalize::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
 			return "Python Initialize And Finalize";
 		};
 	}
-	r2::iItem::DoFunc Initialize_And_Finalize::GetDoFunction()
+	r2cm::iItem::DoFunc Initialize_And_Finalize::GetDoFunction()
 	{
-		return []()->r2::eTestResult
+		return []()->r2cm::eTestResult
 		{
 			std::cout << "# " << GetInstance().GetTitleFunction()( ) << " #" << r2::linefeed;
 
@@ -65,22 +65,22 @@ namespace python_basic_test
 
 			std::cout << r2::split;
 
-			return r2::eTestResult::RunTest;
+			return r2cm::eTestResult::RunTest;
 		};
 	}
 
 
 
-	r2::iItem::TitleFunc PythonInfo::GetTitleFunction() const
+	r2cm::iItem::TitleFunc PythonInfo::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
 			return "Python Info";
 		};
 	}
-	r2::iItem::DoFunc PythonInfo::GetDoFunction()
+	r2cm::iItem::DoFunc PythonInfo::GetDoFunction()
 	{
-		return []()->r2::eTestResult
+		return []()->r2cm::eTestResult
 		{
 			std::cout << "# " << GetInstance().GetTitleFunction()( ) << " #" << r2::linefeed;
 
@@ -179,22 +179,22 @@ namespace python_basic_test
 				Py_Finalize();
 			}
 
-			return r2::eTestResult::RunTest;
+			return r2cm::eTestResult::RunTest;
 		};
 	}
 
 
 
-	r2::iItem::TitleFunc PythonPath::GetTitleFunction() const
+	r2cm::iItem::TitleFunc PythonPath::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
 			return "Python Path";
 		};
 	}
-	r2::iItem::DoFunc PythonPath::GetDoFunction()
+	r2cm::iItem::DoFunc PythonPath::GetDoFunction()
 	{
-		return []()->r2::eTestResult
+		return []()->r2cm::eTestResult
 		{
 			std::cout << "# " << GetInstance().GetTitleFunction()( ) << " #" << r2::linefeed;
 
@@ -224,7 +224,7 @@ namespace python_basic_test
 				Py_Finalize();
 			}
 
-			return r2::eTestResult::RunTest;
+			return r2cm::eTestResult::RunTest;
 		};
 	}
 }
