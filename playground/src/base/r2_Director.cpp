@@ -36,7 +36,6 @@ namespace r2cm
 				break;
 
 			case eTestEndAction::Pause:
-			case eTestEndAction::ChangeScene:
 				system( "cls" );
 				break;
 

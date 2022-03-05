@@ -6,7 +6,6 @@ namespace r2cm
 	{
 		None,
 		Pause,
-		ChangeScene,
 		Exit,
 	};
 }
