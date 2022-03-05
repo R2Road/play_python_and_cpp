@@ -42,7 +42,7 @@ int main()
 	// Setup
 	//
 	r2::Director director;
-	director.Setup( r2::RootMenu::Create( director ) );
+	director.Setup( RootMenu::Create( director ) );
 
 	//
 	// Process
