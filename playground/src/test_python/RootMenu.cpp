@@ -7,8 +7,8 @@
 #include "base/r2_Director.h"
 #include "base/r2_eTestResult.h"
 
-#include "test/python_basic_test.h"
-#include "test/python_script_run_test.h"
+#include "python_basic_test.h"
+#include "python_script_run_test.h"
 
 r2::MenuUp RootMenu::Create( r2::Director& director )
 {

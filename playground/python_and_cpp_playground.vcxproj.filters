@@ -12,19 +12,19 @@
     <ClCompile Include="src\base\r2_Menu.cpp">
       <Filter>base</Filter>
     </ClCompile>
-    <ClCompile Include="src\test\python_basic_test.cpp">
-      <Filter>test</Filter>
-    </ClCompile>
     <ClCompile Include="src\helper\r2_PythonHelper.cpp">
       <Filter>helper</Filter>
-    </ClCompile>
-    <ClCompile Include="src\test\python_script_run_test.cpp">
-      <Filter>test</Filter>
     </ClCompile>
     <ClCompile Include="src\helper\r2_PythonInstance.cpp">
       <Filter>helper</Filter>
     </ClCompile>
     <ClCompile Include="src\test_python\RootMenu.cpp">
+      <Filter>test_python</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test_python\python_basic_test.cpp">
+      <Filter>test_python</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test_python\python_script_run_test.cpp">
       <Filter>test_python</Filter>
     </ClCompile>
   </ItemGroup>
@@ -51,14 +51,8 @@
     <ClInclude Include="src\base\r2_Singleton.h">
       <Filter>base</Filter>
     </ClInclude>
-    <ClInclude Include="src\test\python_basic_test.h">
-      <Filter>test</Filter>
-    </ClInclude>
     <ClInclude Include="src\helper\r2_PythonHelper.h">
       <Filter>helper</Filter>
-    </ClInclude>
-    <ClInclude Include="src\test\python_script_run_test.h">
-      <Filter>test</Filter>
     </ClInclude>
     <ClInclude Include="src\helper\r2_PythonInstance.h">
       <Filter>helper</Filter>
@@ -66,13 +60,16 @@
     <ClInclude Include="src\test_python\RootMenu.h">
       <Filter>test_python</Filter>
     </ClInclude>
+    <ClInclude Include="src\test_python\python_basic_test.h">
+      <Filter>test_python</Filter>
+    </ClInclude>
+    <ClInclude Include="src\test_python\python_script_run_test.h">
+      <Filter>test_python</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="base">
       <UniqueIdentifier>{10b11794-0701-453a-aff4-abad2c3f4448}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="test">
-      <UniqueIdentifier>{aeee364c-08e0-4950-93ae-30b8fdf18d02}</UniqueIdentifier>
     </Filter>
     <Filter Include="helper">
       <UniqueIdentifier>{b637d093-47d8-4185-bb53-389e14ea55c7}</UniqueIdentifier>
