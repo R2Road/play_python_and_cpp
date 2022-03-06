@@ -18,9 +18,6 @@
     <ClCompile Include="src\test_python\python_script_run_test.cpp">
       <Filter>test_python</Filter>
     </ClCompile>
-    <ClCompile Include="src\r2\r2_FrameManager.cpp">
-      <Filter>r2</Filter>
-    </ClCompile>
     <ClCompile Include="src\base\r2cm_Director.cpp">
       <Filter>base</Filter>
     </ClCompile>
@@ -49,9 +46,6 @@
       <Filter>r2</Filter>
     </ClInclude>
     <ClInclude Include="src\r2\r2_Assert.h">
-      <Filter>r2</Filter>
-    </ClInclude>
-    <ClInclude Include="src\r2\r2_FrameManager.h">
       <Filter>r2</Filter>
     </ClInclude>
     <ClInclude Include="src\base\r2cm_Director.h">

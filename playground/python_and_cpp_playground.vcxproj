@@ -34,7 +34,6 @@
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">pch.h</PrecompiledHeaderFile>
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">pch.h</PrecompiledHeaderFile>
     </ClCompile>
-    <ClCompile Include="src\r2\r2_FrameManager.cpp" />
     <ClCompile Include="src\test_python\python_basic_test.cpp" />
     <ClCompile Include="src\test_python\python_script_run_test.cpp" />
     <ClCompile Include="src\test_python\RootMenu.cpp" />
@@ -48,7 +47,6 @@
     <ClInclude Include="src\helper\r2_PythonInstance.h" />
     <ClInclude Include="src\pch.h" />
     <ClInclude Include="src\r2\r2_Assert.h" />
-    <ClInclude Include="src\r2\r2_FrameManager.h" />
     <ClInclude Include="src\r2\r2_Singleton.h" />
     <ClInclude Include="src\test_python\python_basic_test.h" />
     <ClInclude Include="src\test_python\python_script_run_test.h" />
