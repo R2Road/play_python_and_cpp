@@ -1,7 +1,7 @@
 ﻿#include "pch.h"
 #include "python_script_run_test.h"
 
-#include "base/r2cm_eTestEndAction.h"
+#include "r2cm/r2cm_eTestEndAction.h"
 #include "helper/r2_PythonInstance.h"
 
 //

@@ -3,8 +3,8 @@
 
 #include <conio.h>
 
-#include "base/r2cm_Director.h"
-#include "base/r2cm_eTestEndAction.h"
+#include "r2cm/r2cm_Director.h"
+#include "r2cm/r2cm_eTestEndAction.h"
 
 #include "python_basic_test.h"
 #include "python_script_run_test.h"

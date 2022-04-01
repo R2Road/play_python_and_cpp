@@ -5,7 +5,7 @@
 //	#include <vld.h>
 //#endif
 
-#include "base/r2cm_Director.h"
+#include "r2cm/r2cm_Director.h"
 #include "test_python/RootMenu.h"
 #include "helper/r2_PythonHelper.h"
 
